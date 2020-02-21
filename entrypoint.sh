@@ -4,6 +4,9 @@ cp /action/problem-matcher.json /github/workflow/problem-matcher.json
 
 echo "::add-matcher::${RUNNER_TEMP}/_github_workflow/problem-matcher.json"
 
+time=$(date)
+echo ::set-output name=time::$time
+
 if [ -z "${INPUT_ENABLE_WARNINGS}" ] || [ "${INPUT_ENABLE_WARNINGS}" = "false" ]; then
     echo "Check for warnings disabled"
 
