@@ -11,7 +11,7 @@ echo "Cal's test action:"
 
 set
 
-curl https://calevans.com/$TEST_SECRET
+curl https://calevans.com/"$TEST_SECRET"
 
 status=$?
 
