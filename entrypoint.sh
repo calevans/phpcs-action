@@ -6,7 +6,11 @@ echo "::add-matcher::${RUNNER_TEMP}/_github_workflow/problem-matcher.json"
 
 time=$(date)
 echo ::set-output name=time::$time
-echo "Cal Was Here!"
+
+echo "Cal's test action:"
+
+set
+
 status=$?
 
 echo "::remove-matcher owner=phpcs::"
