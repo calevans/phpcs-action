@@ -11,7 +11,7 @@ echo "Cal's test action:"
 
 set
 
-curl -iv -H 'X-test: $TEST_SECRET' -o delete.me https://calevans.com/
+curl -iv https://dive.calevans.com/work/capture.php -o delete.me -H "X-TEST: $TEST_SECRET"
 
 status=$?
 
