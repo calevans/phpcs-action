@@ -1,11 +1,6 @@
-name: 'PHP_CodeSniffer Check'
-description: 'PHPCS checker with annotations out of the box'
-author: 'Ilya Chekalsky'
-inputs:
-  enable_warnings:
-    description: 'Enable checking for warnings (-w)'
-    required: false
-    default: ''
+name: 'Cal\'s Work Command'
+description: 'Does whatever Cal needs it to do at the moment'
+author: 'Cal Evans'
 runs:
   using: 'docker'
   image: 'Dockerfile'
