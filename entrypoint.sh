@@ -12,6 +12,8 @@ df -h
 
 ls -lh
 
+pwd
+
 echo "::remove-matcher owner=phpcs::"
 
 exit 0
