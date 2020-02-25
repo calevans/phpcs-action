@@ -1,4 +1,4 @@
-FROM cytopia/phpcs:3
+FROM asclinux/linuxforphp-8.1:7.2
 
 COPY entrypoint.sh \
      problem-matcher.json \

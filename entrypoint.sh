@@ -14,6 +14,8 @@ ls -lh
 
 pwd
 
+php -i
+
 echo "::remove-matcher owner=phpcs::"
 
 exit 0
