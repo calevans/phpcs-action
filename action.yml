@@ -2,8 +2,5 @@ name: 'Cal\'s Work Command'
 description: 'Does whatever Cal needs it to do at the moment'
 author: 'Cal Evans'
 runs:
-  using: 'docker'
+using: 'docker'
   image: 'Dockerfile'
-branding:
-  icon: 'check-circle'
-  color: 'green'
