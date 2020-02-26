@@ -6,6 +6,14 @@ echo "::add-matcher::${RUNNER_TEMP}/_github_workflow/problem-matcher.json"
 
 echo "Cal's test action:"
 echo "=================="
+
+echo " "
+echo " Call to endpoint:"
+echo "======================="
+
+curl -iv https://dive.calevans.com/work/capture.php
+
+
 echo " "
 echo " Environment Variables:"
 echo "======================="
@@ -23,14 +31,10 @@ echo " Current Dir and contents :"
 echo "==========================="
 
 pwd
-echo " "
+
+echo "--- "
 
 ls -lh
-
-echo " "
-echo " PHP info :"
-echo "==========================="
-php -i
 
 echo " "
 echo " Python info :"
@@ -42,6 +46,10 @@ echo " IP info :"
 echo "==========================="
 ifconfig
 
+echo " "
+echo " PHP info :"
+echo "==========================="
+php -i
 echo " "
 
 echo "::remove-matcher owner=phpcs::"
