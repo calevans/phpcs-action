@@ -8,13 +8,6 @@ echo "Cal's test action:"
 echo "=================="
 
 echo " "
-echo " Call to endpoint:"
-echo "======================="
-
-curl -iv https://dive.calevans.com/work/capture.php
-
-
-echo " "
 echo " Environment Variables:"
 echo "======================="
 
@@ -35,16 +28,6 @@ pwd
 echo "--- "
 
 ls -lh
-
-echo " "
-echo " Python info :"
-echo "==========================="
-python -version
-
-echo " "
-echo " IP info :"
-echo "==========================="
-ifconfig
 
 echo " "
 echo " PHP info :"
