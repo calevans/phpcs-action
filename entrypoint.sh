@@ -1,7 +1,7 @@
 #!/usr/bin/php
 
 <?php
-require_once 'vendor/autoload.php';
+require_once '/root/.composer/vendor/autoload.php';
 $executingAction = getenv('GITHUB_ACTIONS')??false;
 if (!$executingAction) {
   $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
