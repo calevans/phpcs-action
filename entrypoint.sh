@@ -12,10 +12,10 @@ if (!$executingAction) {
   $commitMessage = $returnValue[0];
 }
 
-$text = "Reference\n  " . getenv('GITHUB_REF') . "\n" .
-        "Event\n  " . getenv('GITHUB_EVENT_NAME') . "\n" .
-        "Commit\n  " . "https://github.com/" . getenv('GITHUB_REPOSITORY') . '/' . getenv('GITHUB_SHA') . "/commit\n" .
-        "Message\n  " . $commitMessage . "\n";
+$text = "*Reference*\n  " . getenv('GITHUB_REF') . "\n" .
+        "*Event*\n  " . getenv('GITHUB_EVENT_NAME') . "\n" .
+        "*Commit*\n  " . "https://github.com/" . getenv('GITHUB_REPOSITORY') . '/' . getenv('GITHUB_SHA') . "/commit\n" .
+        "*Message*\n  " . $commitMessage . "\n";
 
 $payload = [
   'text' => $text,
