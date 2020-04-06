@@ -18,7 +18,7 @@ $text = "Reference\n  " . getenv('GITHUB_REF') . "\n" .
         "Message\n  " . $commitMessage . "\n";
 
 $payload = [
-  'text' => 'Hello World ' . date('m-d-Y h:i:s'),
+  'text' => $text,
   'username' => getenv('SLACK_USERNAME'),
   'icon_url' => getenv('SLACK_ICON')
 ];
