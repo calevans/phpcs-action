@@ -8,7 +8,7 @@ if (!$executingAction) {
   $dotenv->load();
 } else {
   exec("git log -n 1 --oneline --abbrev-commit --pretty=format:'%h--%d--%s' | awk -F '--' '{print $3}'", $commitMessage);
-  putenv('COMMIT_MESSAGE',$commitMessage)
+  putenv('COMMIT_MESSAGE',$commitMessage);
 }
 
 $text = "Reference\n  " . getenv('GITHUB_REF') . "\n" .
